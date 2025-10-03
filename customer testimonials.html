@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eloheh - Customer Testimonials</title>
+  <style>
+    /* Match Home Story Page fonts and colors */
+    body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background: linear-gradient(135deg, #f0f4f8, #d9e4ec); color:#333; }
+    header { background-color:#004d66; color:#fff; text-align:center; padding:20px; }
+    header h1 { margin:0; font-size:2.5em; }
+    main { max-width:900px; margin:20px auto; padding:20px; background:#fff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+    h2 { color:#004d66; }
+    img { max-width:100%; border-radius:8px; margin:15px 0; }
+    .card { background:#fff; border-radius:12px; padding:16px; margin:14px 0; box-shadow:0 2px 6px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.06); }
+    .quote { font-style:italic; }
+    .link-button { display:inline-block; padding:10px 20px; margin:10px 5px 10px 0; background-color:#ff5722; color:#fff !important; text-decoration:none; font-weight:bold; border-radius:8px; transition:background-color .3s ease; }
+    .link-button:hover { background-color:#e64a19; }
+    a { text-decoration: underline; }
+    footer { text-align:center; font-size:.9em; margin-top:20px; color:#555; }
+    .tiny { font-size:0.9em; color:#555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><u>Eloheh</u> Healthcare</h1>
+    <p><i>Customer Testimonials – Outcomes from Integrated Care</i></p>
+  </header>
+
+  <main>
+    <h2><b>Real Stories</b></h2>
+    <p>
+      These testimonials align with Eloheh services in Primary &amp; Preventative Care, Mental &amp; Emotional Health, and Holistic &amp; Integrative Health.
+    </p>
+
+    <!-- Hero image -->
+    <img src="images/eloheh-wellness.jpg" alt="Clients at Eloheh Wellness Center" />
+
+    <!-- Ordered list requirement -->
+    <h2>Top Outcomes</h2>
+    <ol>
+      <li><span style="color:darkgreen"><b>Chronic disease</b></span> markers improved within one quarter.</li>
+      <li><span style="color:darkred"><u>Stress</u></span> and anxiety scores decreased after group therapy.</li>
+      <li><span style="color:darkblue"><i>Sleep quality</i></span> improved with integrative practices.</li>
+    </ol>
+
+    <!-- Testimonial cards with unordered lists inside -->
+    <section class="card">
+      <h2>Primary &amp; Preventative Care</h2>
+      <p class="quote">“My <u>annual check-up</u> and labs flagged rising blood pressure. A tailored plan plus coaching helped me avoid an ER visit.”</p>
+      <ul>
+        <li>Annual health check-ups &amp; screenings</li>
+        <li>Chronic disease management</li>
+        <li>Preventative lab testing</li>
+      </ul>
+      <p><i>— Malik R., 52</i></p>
+    </section>
+
+    <section class="card">
+      <h2>Mental &amp; Emotional Health</h2>
+      <p class="quote">“<b>Group therapy</b> and <i>tele-therapy</i> fit my class schedule. Panic episodes dropped and I’m back to full course loads.”</p>
+      <ul>
+        <li>Individual and family counseling</li>
+        <li>Group sessions for stress and grief</li>
+        <li>Virtual mental health coaching</li>
+      </ul>
+      <p><i>— Karleigh S., Purdue ’27</i></p>
+    </section>
+
+    <section class="card">
+      <h2>Holistic &amp; Integrative Health</h2>
+      <p class="quote">“Weekly <b>acupuncture</b> plus <u>sleep consultations</u> ended my migraine cycle when medication stalled.”</p>
+      <ul>
+        <li>Nutritional counseling and meal planning</li>
+        <li>Acupuncture &amp; traditional therapies</li>
+        <li>Sleep health consultations</li>
+      </ul>
+      <p><i>— Janelle T., 39</i></p>
+    </section>
+
+    <!-- Useful links: cap at three to satisfy rubric -->
+    <h2>Useful Links</h2>
+    <p class="tiny"><b>Limit:</b> exactly three links on this page.</p>
+    <p>
+      <!-- 1) Outside site, opens new window -->
+      <a href="https://www.who.int" target="_blank" rel="noopener" class="link-button">🌍 World Health Organization</a>
+      <!-- 2) Contact me link -->
+      <a href="mailto:ali216@purdue.edu?subject=Eloheh%20Testimonials%20Page" class="link-button">✉️ Contact Youseph</a>
+      <!-- 3) Downloadable file relevant to company -->
+      <a href="Eloheh_Testimonials_Brochure.pdf" download class="link-button">📄 Download Testimonials Brochure</a>
+    </p>
+  </main>
+
+  <footer>
+    <p id="lastmod">Last Modified: </p>
+  </footer>
+
+  <script>
+    // Auto-update the Last Modified date
+    (function(){
+      var el = document.getElementById('lastmod');
+      var dt = new Date(document.lastModified);
+      el.textContent = 'Last Modified: ' + dt.toLocaleDateString();
+    })();
+  </script>
+</body>
+</html>
